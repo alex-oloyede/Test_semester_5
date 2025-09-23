@@ -1,33 +1,40 @@
 class Calculator:
+        def __init__(self, val1, val2):
+        self.a = val1
+        self.b = val2
     
-    def add(self, a, b):
+        def add(self):
         # addition
-        if type(a) == "str" and type(b) == "str":
+        if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
-        return a + b
-    
-    def subtract(self, a, b):
+        return self.a + self.b
+
+    def subtract(self):
         # subtraction
-        if type(a) == "str" and type(b) == "str":
+        if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
-        return a - b
-    
-    def multiply(self, a, b):
+        return self.a - self.b
+
+    def multiply(self):
         # multiplication
-        if type(a) == "str" and type(b) == "str":
+        if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
-        return a * b
-    
-    def divide(self, a, b):
+        return self.a * self.b
+
+    def divide(self):
         # division
-        if type(a) == "str" and type(b) == "str":
+        if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
         if b == 0:
             raise ValueError("Cannot divide by zero")
-        return a / b
-    
-    def power(self, base, exponent):
+        return self.a / self.b
+
+    def power(self):
         # exponential
-        if type(a) == "str" and type(b) == "str":
+        if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
-        return base ** exponent
+        return self.a ** self.b
+
+
+nums = Calculator(5, 3)
+# print(nums.subtract())
