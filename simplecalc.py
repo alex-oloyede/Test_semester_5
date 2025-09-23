@@ -5,25 +5,25 @@ class Calculator:
     
     def add(self):
         # addition
-        if type(self.a) == "str" and type(self.b) == "str":
+        if not isinstance(self.a, (int, float)) or not isinstance(self.b, (int, float)):
             raise TypeError("Both arguments must be numbers")
         return self.a + self.b
 
     def subtract(self):
         # subtraction
-        if type(self.a) == "str" and type(self.b) == "str":
+        if not isinstance(self.a, (int, float)) or not isinstance(self.b, (int, float)):
             raise TypeError("Both arguments must be numbers")
         return self.a - self.b
 
     def multiply(self):
         # multiplication
-        if type(self.a) == "str" and type(self.b) == "str":
+        if not isinstance(self.a, (int, float)) or not isinstance(self.b, (int, float)):
             raise TypeError("Both arguments must be numbers")
         return self.a * self.b
 
     def divide(self):
         # division
-        if type(self.a) == "str" and type(self.b) == "str":
+        if not isinstance(self.a, (int, float)) or not isinstance(self.b, (int, float)):
             raise TypeError("Both arguments must be numbers")
         if b == 0:
             raise ValueError("Cannot divide by zero")
@@ -31,7 +31,7 @@ class Calculator:
 
     def power(self):
         # exponential
-        if type(self.a) == "str" and type(self.b) == "str":
+        if not isinstance(self.a, (int, float)) or not isinstance(self.b, (int, float)):
             raise TypeError("Both arguments must be numbers")
         return self.a ** self.b
 
