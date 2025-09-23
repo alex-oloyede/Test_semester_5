@@ -1,9 +1,9 @@
 class Calculator:
-        def __init__(self, val1, val2):
+    def __init__(self, val1, val2):
         self.a = val1
         self.b = val2
     
-        def add(self):
+    def add(self):
         # addition
         if type(self.a) == "str" and type(self.b) == "str":
             raise TypeError("Both arguments must be numbers")
